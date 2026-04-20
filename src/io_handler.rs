@@ -15,7 +15,7 @@ pub fn get_f64(prompt: &str) -> f64 {
 
 pub fn get_all_inputs() -> (f64, f64, f64, f64, f64) {
     println!("\n Black-Scholes European Call Option Pricer");
-    println!("===========================================\n");
+   
     
     let s = get_f64("Spot price (S): ");
     let k = get_f64("Strike price (K): ");
