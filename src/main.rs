@@ -12,5 +12,5 @@ fn main() {
     println!("   Call option price: {:.4}", call);
     println!("   Put option price:  {:.4}", put);
     println!("   Delta (call):      {:.4}", delta);
-    println!("===========================================\n");
+   
 }
