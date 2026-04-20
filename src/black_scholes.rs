@@ -43,3 +43,5 @@ fn norm_cdf(x: f64) -> f64 {
     
     if x >= 0.0 { phi } else { 1.0 - phi }
 }
+
+// Hush! That was some crazy maths
