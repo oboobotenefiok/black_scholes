@@ -13,7 +13,7 @@ pub fn get_f64(prompt: &str) -> f64 {
     }
 }
 
-pub fn get_all_inputs() -> (f64, f64, f64, f64, f64) {
+pub fn get_all_inputs() -> (f64, f64, f64, f64, f64) /*There should be a shorter way to write these repeated types like in Arrays :-) */ {
     println!("\n Black-Scholes European Call Option Pricer");
    
     
