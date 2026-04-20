@@ -39,7 +39,7 @@ fn norm_cdf(x: f64) -> f64 {
     let a3 = 1.781477937;
     let a4 = -1.821255978;
     let a5 = 1.330274429;
-    
+    /*I could just make these a tuple. Huh?*/
     let pdf = (-x.powi(2) / 2.0).exp() / (2.0 * PI).sqrt();
     let phi = 1.0 - pdf * (a1*k + a2*k.powi(2) + a3*k.powi(3) + a4*k.powi(4) + a5*k.powi(5));
     
