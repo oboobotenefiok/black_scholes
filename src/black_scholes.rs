@@ -30,6 +30,8 @@ fn calculate_d1(s: f64, k: f64, t: f64, r: f64, sigma: f64) -> f64 {
     ((s / k).ln() + (r + 0.5 * sigma.powi(2)) * t) / (sigma * t.sqrt())
 }
 
+/*Sigma reminds me of the Enigma Nuwell guy on X, must be his twin... lol*/
+
 fn norm_cdf(x: f64) -> f64 {
     let k = 1.0 / (1.0 + 0.2316419 * x.abs());
     let a1 = 0.31938153;
