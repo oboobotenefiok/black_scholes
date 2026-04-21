@@ -50,7 +50,33 @@ fn norm_cdf(x: f64) -> f64 {
 
 /* If you're following along for learning purposes, here's what each of the methods do from the standard library
 
-· .max() - Returns the larger of two numbers, so 2.max(5) will return 5, 4.max(1) will return 4. There's also a .min() method
+· .max() - Returns the larger of two numbers, so 2.max(5) will return 5, 4.max(1) will return 4. There's also a .min() method.
+
+Let me dwell more on this one cause I love it.
+
+Let's assume you don't know about the .max() method, this is how you'd implement it manually:
+
+let diff = s – k;
+If diff > 0.0 {
+    Diff
+} else {
+    0.0
+}
+
+...but, this is how it actually looks like under the hood in the standard library when you call .max()...
+
+           pub fn max(self, other: f64) -> f64 {
+    // NaN cases (Not a Number)
+    If self.is_nan() { return self; }
+    If other.is_nan() { return other; }
+    
+    // Regular comparison
+    If self > other { self } else { other }
+}
+
+Now that looks cool...
+
+
 · .sqrt() - Calculates the square root of a number
 · .exp() - Raises Euler's number (e) to the power of a number, consult your textbooks for that :-)
 · .ln() - Computes the natural logarithm (base e) of a number
