@@ -47,3 +47,14 @@ fn norm_cdf(x: f64) -> f64 {
 }
 
 // Hush! That was some crazy maths
+
+/* If you're following along for learning purposes, here's what each of the methods do from the standard library
+
+· .max() - Returns the larger of two numbers, so 2.max(5) will return 5, 4.max(1) will return 4. There's also a .min() method
+· .sqrt() - Calculates the square root of a number
+· .exp() - Raises Euler's number (e) to the power of a number, consult your textbooks for that :-)
+· .ln() - Computes the natural logarithm (base e) of a number
+· .powi() - Raises a number to an integer power, you'll have to pass the integer power through the method like 2.powi(3) for 2 raised to the power of 3
+· .abs() - Returns the absolute value (removes negative sign). This is useful if you are interested in magnitudes.
+You'll always have to be conscious of BODMAS when working with complex maths like this. To me it's complex!
+*/
